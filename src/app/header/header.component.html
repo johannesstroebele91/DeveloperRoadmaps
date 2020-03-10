@@ -1,0 +1,23 @@
+<div class="header-background" [ngClass]="{'headerBackgroundMobile': !showMobileMenu}"></div>
+<div class="container-header">
+  <div id="header">
+    <!-- Logo -->
+    <a id="logo" routerLink="/">
+      <div class="material-icons">directions_run</div>
+      <div id="logoText">Developer Roadmaps</div>
+    </a>
+    <!-- Desktop Menu -->
+    <div id="hamburger" class="material-icons"  (click)="clickMenu()">menu</div>
+    <div id="menuDesktop">
+      <a routerLink="/frontend" routerLinkActive="router-link-active">Frontend</a>
+      <a routerLink="/backend" routerLinkActive="router-link-active">Backend</a>
+      <a routerLink="/about" routerLinkActive="router-link-active">About</a>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div *ngIf="!showMobileMenu" id="menuMobile" [ngStyle]="{'background-color': showMobileMenu ? '#242224' : 'none'}">
+    <a routerLink="/frontend" routerLinkActive="router-link-active"><span class="material-icons">dashboard</span>Frontend</a>
+    <a routerLink="/backend" routerLinkActive="router-link-active"><span class="material-icons">settings_input_component</span>Backend</a>
+    <a routerLink="/about" routerLinkActive="router-link-active"><span class="material-icons">person</span>About</a>
+  </div>
+</div>

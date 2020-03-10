@@ -1,0 +1,94 @@
+@import "../../variables.scss";
+
+// General
+.container-header {
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.header-background {
+  background: $major;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 829px) {
+  #header {
+    margin: 0 18px;
+  }
+}
+
+#header a {
+  line-height: 60px;
+}
+
+#logo {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.router-link-active {
+  text-decoration: underline;
+}
+
+// Mobile
+@media (max-width: 593px) {
+  #menuDesktop {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    color: $white;
+  }
+  #menuMobile {
+    display: block;
+  }
+  #menuMobile a {
+    padding-top: 18px;
+  }
+  #menuMobile a {
+    background: $major;
+    color: $white;
+    display: block;
+    padding: 18px;
+  }
+  #menuMobile span {
+    padding: 0 6px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+// Desktop
+@media (min-width: 576px) {
+  #menuDesktop {
+    display: inline-block;
+  }
+  #menuMobile {
+    display: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  #menuDesktop a {
+    padding: 0 18px;
+    display: inline-block;
+  }
+  #menuDesktop span {
+    padding: 0 6px 0 0;
+    display: inline-block;
+  }
+}

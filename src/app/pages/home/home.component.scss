@@ -1,0 +1,17 @@
+@import "../../../variables.scss";
+
+.introduction {
+  margin: 60px auto;
+  max-width: 780px;
+  padding: 0 18px;
+}
+
+.introduction > div:nth-child(1) {
+  padding-right: 24px;
+}
+
+.introduction > div:nth-child(2) {
+  color: $minor;
+  text-align: center;
+  font-size: 180px;
+}

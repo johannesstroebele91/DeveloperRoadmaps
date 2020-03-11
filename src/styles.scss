@@ -19,8 +19,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  color: $major;
 }
 
 .container {
@@ -28,4 +27,3 @@ a {
   max-width: 780px;
   padding: 0 18px;
 }
-

@@ -1,11 +1,6 @@
 @import "../../variables.scss";
 
 // General
-.container-header {
-  margin: 0 auto;
-  max-width: 780px;
-}
-
 .header-background {
   background: $major;
   height: 60px;
@@ -16,7 +11,18 @@
   width: 100%;
 }
 
+.container-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
 #header {
+  margin: 0 auto;
+  max-width: 780px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +35,9 @@
 }
 
 #header a {
+  color: $white;
   line-height: 60px;
+  text-decoration: none;
 }
 
 #logo {

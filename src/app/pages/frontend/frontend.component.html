@@ -1,14 +1,15 @@
-<script src="../../app.component.spec.ts"></script>
 <app-header></app-header>
 <div class="container">
-  <h1>The frontend page works!</h1>
-  <div *ngFor="let headline of milestonesFrontendHeadlines">
-    <h2>{{headline}}</h2>
-    <ng-container *ngFor="let milestone of milestonesFrontendContent; let i = index">
-      <ng-container *ngFor="let steps of milestone; let j = index">
-        <mat-checkbox><a href="{{steps[1]}}">{{i
-            }} {{j}} {{steps[0]}}</a></mat-checkbox>
-      </ng-container>
-    </ng-container>
+  <h1>Frontend roadmap</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div *ngFor="let milestone of milestonesFrontend">
+    <div class="milestone-headline">{{milestone.headline}}</div>
+    <!-- TODO build in functionality for checkbox -> headline button completely green: https://stackoverflow.com/questions/47384092/angular-mat-checkbox-dynamically-with-ngmodel    -->
+    <div *ngFor="let step of milestone.steps">
+      <mat-checkbox><a href="{{step.url}}">{{step.name}}</a></mat-checkbox>
+    </div>
   </div>
 </div>

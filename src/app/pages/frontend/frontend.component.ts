@@ -10,20 +10,19 @@ import {FrontendDataService} from '../../frontend-data.service';
 
 export class FrontendComponent implements OnInit {
 
-  milestonesFrontendContent: any;
-  milestonesFrontendHeadlines: string[];
+  milestonesFrontend: any;
 
   constructor(private frontendDataService: FrontendDataService) {
+    // TODO implement usage of external JSON for practicing purposes
     // console.log('Reading local json files');
     // console.log(milestonesFrontend);
   }
 
   ngOnInit() {
-    this.frontendDataService.getMilestonesFrontendContent().subscribe(data => {
-      this.milestonesFrontendContent = data;
-    });
-    this.frontendDataService.getMilestonesFrontendHeadlines().subscribe(data => {
-      this.milestonesFrontendHeadlines = data;
+
+    // Load data from service
+    this.frontendDataService.getMilestonesFrontend().subscribe(data => {
+      this.milestonesFrontend = data;
     });
   }
 }

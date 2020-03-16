@@ -9,6 +9,7 @@
     <!-- Desktop Menu -->
     <div id="hamburger" class="material-icons" (click)="clickMenu()">menu</div>
     <div id="menuDesktop">
+      <!-- TODO fix routerLinkActive -->
       <a routerLink="/frontend" routerLinkActive="router-link-active">Frontend</a>
       <a routerLink="/backend" routerLinkActive="router-link-active">Backend</a>
       <a routerLink="/about" routerLinkActive="router-link-active">About</a>
@@ -16,6 +17,7 @@
   </div>
   <!-- Mobile Menu -->
   <div *ngIf="!showMobileMenu" id="menuMobile" [ngStyle]="{'background-color': showMobileMenu ? '#242224' : 'none'}">
+    <!-- TODO fix routerLinkActive -->
     <a routerLink="/frontend" routerLinkActive="router-link-active"><span class="material-icons">dashboard</span>Frontend</a>
     <a routerLink="/backend" routerLinkActive="router-link-active"><span
       class="material-icons">settings_input_component</span>Backend</a>

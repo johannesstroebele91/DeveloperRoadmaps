@@ -1,0 +1,60 @@
+{
+  "milestones": [
+    {
+      "internet": [
+        {
+          "step": "Basics",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "HTTP",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "Browsers",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "DNS",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "Domain name",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "Hosting",
+          "url": "https://www.johannesstroebele.com/"
+        }
+      ]
+    },
+    {
+      "asd": [
+        {
+          "step": "Basics",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "HTTP",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "Browsers",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "DNS",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "Domain name",
+          "url": "https://www.johannesstroebele.com/"
+        },
+        {
+          "step": "Hosting",
+          "url": "https://www.johannesstroebele.com/"
+        }
+      ]
+    }
+  ]
+}

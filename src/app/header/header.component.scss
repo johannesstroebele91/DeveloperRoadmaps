@@ -18,6 +18,10 @@
   width: 100%;
 }
 
+.container-header a {
+  text-decoration: none;
+}
+
 
 #header {
   margin: 0 auto;
@@ -37,7 +41,11 @@
 #header a {
   color: $white;
   line-height: 60px;
-  text-decoration: none;
+}
+
+.router-link-active {
+  color: $minor;
+  text-decoration: line-through;
 }
 
 #logo {

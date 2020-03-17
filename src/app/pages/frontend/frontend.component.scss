@@ -1,12 +1,18 @@
 @import "../../../variables.scss";
 
 .milestone-headline {
+  font-weight: bold;
+  font-size: 1.64285714em;
   vertical-align: center;
   text-align: center;
   padding: 9px 18px;
-  margin: 6px 0;
-  color: #444444;
+  margin: 30px 0 12px 0;
+  color: $greyDark;
   background: white;
   border-radius: 3px;
   border: #28b489 2px solid;
+}
+
+.milestone-steps a {
+  color: $greyDark;
 }

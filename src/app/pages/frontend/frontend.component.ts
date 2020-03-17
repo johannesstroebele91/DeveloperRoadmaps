@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 // import * as milestonesFrontend from '../../../assets/frontend-roadmap-content.json';
-import {FrontendDataService} from '../../frontend-data.service';
+import {FrontendDataService} from './frontend-data.service';
 
 @Component({
   selector: 'app-frontend',

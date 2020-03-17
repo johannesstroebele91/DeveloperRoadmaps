@@ -11,7 +11,7 @@ html, .root {
 
 body {
   color: $black;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.28571429em;
   font-family: $standard;
   background: white;
@@ -19,6 +19,7 @@ body {
 }
 
 a {
+  font-size: 1.2em;
   color: $major;
 }
 

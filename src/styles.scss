@@ -5,7 +5,7 @@ html, body {
 }
 
 html, .root {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 18px;
 }
 
@@ -18,14 +18,8 @@ body {
   margin: 0;
 }
 
-a {
-  font-size: 1.2em;
-  color: $major;
-}
-
 .container {
   margin: 120px auto;
   max-width: 780px;
   padding: 0 18px;
 }
-

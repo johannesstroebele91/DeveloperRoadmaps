@@ -14,6 +14,8 @@ import {FrontendComponent} from './pages/frontend/frontend.component';
 import {BackendComponent} from './pages/backend/backend.component';
 import {AboutComponent} from './pages/about/about.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatIconModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatTooltipModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

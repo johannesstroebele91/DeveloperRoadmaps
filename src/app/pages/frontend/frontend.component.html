@@ -1,13 +1,16 @@
 <app-header></app-header>
 <div class="container">
   <h1>Frontend roadmap</h1>
-  <p>For now, these steps only contain text-based explanations that we found helpful for understanding that particular step.
+  <p>For now, these steps only contain text-based explanations that we found helpful for understanding
+    that particular step.
     Later, we will add links to exercises to deepen the knowledge and learn how to apply it in practice.</p>
   <div *ngFor="let milestone of milestonesFrontend">
     <div class="milestone-headline">{{milestone.headline}}</div>
     <!-- TODO build in functionality for checkbox -> headline button completely green: https://stackoverflow.com/questions/47384092/angular-mat-checkbox-dynamically-with-ngmodel    -->
-    <div class="milestone-steps" *ngFor="let step of milestone.steps">
-      <mat-checkbox><a href="{{step.url}}">{{step.name}}</a></mat-checkbox>
+    <div *ngFor="let step of milestone.steps; let i = index;">
+      <mat-checkbox>
+        <a matTooltip="Info about the action" href="{{step.url}}">{{step.name}}</a>
+      </mat-checkbox>
     </div>
   </div>
 </div>

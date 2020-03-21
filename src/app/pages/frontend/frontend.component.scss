@@ -12,6 +12,15 @@
   border: #28b489 2px solid;
 }
 
+.milestone-headline-done{
+  background: $major;
+  color: $white;
+}
+
 .milestone-steps a {
   color: $greyDark;
+}
+
+.milestone-steps a:visited {
+  color: $minor;
 }
